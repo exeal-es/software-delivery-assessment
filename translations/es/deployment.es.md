@@ -10,14 +10,14 @@
 
 Based on the maturity questions from Mirco Hering, author of [*DevOps for the Modern Enterprise*](https://notafactoryanymore.com/2018/03/01/mircos-self-assessment-questions-of-devops-maturity/)
 
-Purpose:  *Assess the confidence of the team in the deployment practices for its software*
+Propósito: *Evaluar la confianza del equipo en las prácticas de despliegue de su software*
 
-Method: Use the [*Spotify Squad Health Check*](https://labs.spotify.com/2014/09/16/squad-health-check-model/) approach to assess the team's answers to the following questions:
+Metodología: Use the [*Spotify Squad Health Check*](https://labs.spotify.com/2014/09/16/squad-health-check-model/) approach to assess the team's answers to the following questions:
 
-| **Question**                                                                                                                                 | **Tired (1)**                                                        | **Inspired (5)**                                             |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------ |
-| 1\. **Environment Rebuild** - What would happen if we decided to: **blow away the environment and rebuild it from our stored configuration** | We don't know what would happen - the environments are flaky         | No problem - we test this in the deployment pipeline already |
-| 2\. **Fresh Config** - What would happen if we decided to: **delete the application config and redeploy it**                                 | We don't know what would happen - the configuration process is flaky | No problem - we test this in the deployment pipeline already |
-| 3\. **Redeploy App** - What would happen if we decided to: **redeploy the application even though nothing has changed**                      | We don't know what would happen - the deployments are flaky          | No problem - we test this in the deployment pipeline already |
-| 4\. **Rerun Tests** - What would happen if we decided to: **rerun the test suite and then again**                                            | We don't know what would happen - the test suite is really flaky     | No problem - we test this in the deployment pipeline already |
+| **Question**                                                                                                                                          | **Tired (1)**                                                             | **Inspired (5)**                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| 1\. **Environment Rebuild** - Qué pasaría si decidieramos: **destruyéramos el entorno y lo reconstruyeramos a partir de la configuración almacenada** | No sabemos qué pasaría - los entornos son inconsistentes                  | *No problem* - ya probamos esto en el *pipeline* de despliegue |
+| 2\. **Fresh Config** - Qué pasaría si decidieramos: **borraramos la configuración de la aplicación y la volviésemos a desplegar**                     | No sabemos qué pasaría - los procesos de configuración son inconsistentes | *No problem* - ya probamos esto en el *pipeline* de despliegue |
+| 3\. **Redeploy App** - Qué pasaría si decidieramos: **redesplegaramos la aplicación, incluso sin haber cambiado nada**                                | No sabemos qué pasaría - los despliegues son inconsistentes               | *No problem* - ya probamos esto en el *pipeline* de despliegue |
+| 4\. **Rerun Tests** - Qué pasaría si decidieramos: **ejecutar la test suite y después volverla a ejecutar**                                           | No sabemos qué pasaría - la *test suite* es inconsistente                   | *No problem* - ya probamos esto en el *pipeline* de despliegue |
 
